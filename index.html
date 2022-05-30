@@ -9,24 +9,50 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caudex&display=swap" rel="stylesheet">   
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        #draggable { width: 150px; height: 150px; padding: 0.5em; }
+        </style>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+        <script>
+        $( function() {
+          $( "#draggable" ).draggable();
+        } );
+        </script>
+        
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#accordion" ).accordion();
+  } );
+  </script>
+  
+</head>
 
 <body>
     <header>
-        <div class="logo">
-            <img src="images/logo.PNG" alt="" width="200" height="170">
-        </div>
-        <button class="nav-toggle" arial-label="toggle navigation">
-            <span class="hamburger"></span>
-        </button>
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">About me</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Gallery</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
-            </ul>
-        </nav>
+        
+
+            <div id="navigation-primary">
+                    <div class="container-1140">
+                        <nav>
+                            <ul>
+                                <li><a href="gallery.html">Home</a></li>
+                                <li><a href="video.html">About</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="process.html">Process</a></li>
+                            </ul>
+                        </nav>
+                    
+                    </div>
+                </div>
+        
+
+                <div class="logo">
+                    <img src="images/logo.PNG" alt="" width="200" height="170">
+                </div>
     </header>
             <!-- introduction -->
     <section class="intro" id="home">
@@ -35,6 +61,11 @@
         </h1>
         <p class="section__subtitle section__subtitle--intro">UI/UX designer</p>
         <img src="images/myself.JPG" alt="a picture of Yuki Tsuji" class="intro__img">
+            <div id="draggable" class="ui-widget-content">
+                <p>Drag me around</p>
+                <img src="images/Yuki.gif" alt="Yuki" class="portfolio__img">
+    
+              </div>
     </section>
 
 
@@ -66,6 +97,41 @@
      </div>
     </section>
 
+    <section>
+        <h2 class="Iam">I am </h2>
+        <div id="accordion">
+
+            <h3> Inclusive Designer</h3>
+            <div>
+              <p> Image result for description for inclusive design
+                Offering various ways to engage in an experience is a key principle of inclusive design. 
+                When a user is given different options, they can choose a method that best serves them 
+                in their unique circumstances.
+              </p>
+            </div>
+            <h3>Open minded</h3>
+            <div>
+              <p>
+                being receptive to a wide variety of ideas, arguments, and information. 
+                Being open-minded is generally considered a positive quality.
+                 It is a necessary ability in order to think critically and rationally.
+              </p>
+            </div>
+            <h3>Visual Enthusiast</h3>
+            <div>
+              <p>
+              I  provide businesses with visually appealing graphic designs for their websites. 
+              </p>
+              <ul>
+                <li> Great appearance </li>
+                <li> Cool strucure </li>
+                <li> Neat design</li>
+              </ul>
+            </div>
+          </div>
+</section>
+
+
     <!-- My work-->
     <section class="my-work" id="work">
         <h2 class="section__title">My work</h2>
@@ -75,10 +141,10 @@
                 <img src="images/FT main.jpg" alt="Fair Trade" class="portfolio__img">
             </a>  
             <a href="#" class="portfolio__item">
-                <img src="images/ISC1 (1)_edited 2.jpg" alt="Fair Trade" class="portfolio__img">
+                <img src="images/FT main.jpg" alt="Fair Trade" class="portfolio__img">
             </a>  
             <a href="#" class="portfolio__item">
-                <img src="images/Green P+ 2.jpg" alt="Fair Trade" class="portfolio__img">
+                <img src="images/FT main.jpg" alt="Fair Trade" class="portfolio__img">
             </a>  
 
 
